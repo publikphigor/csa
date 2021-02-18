@@ -5,9 +5,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     background: #fff;
 }
+    .padding {
+        padding: 7vh 0;
+    }
 
 ul {
     padding: 0;
@@ -20,7 +23,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #E31E25;
+    color: #061a40;
 }
     a:hover {
         color: #e31e25;
@@ -66,7 +69,7 @@ h1,h2,h3 {
     font-size: 2rem;
 }
 .sh-3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .sh-l {
     font-weight: 400;
@@ -76,10 +79,296 @@ h1,h2,h3 {
     font-size: 2rem;
 }
 .st-2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .st-3 {
     font-size: 1rem;
 }
 
+.btn {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+    .bg-b1 {
+        background: yellowgreen;
+    }
+    .bg-b2 {
+        background: violet;
+    }
+    .bg-b3 {
+        background: tomato;
+    }
+    .bg-b4 {
+        background: pink;
+    }
+    .bg-b5 {
+        background: mediumspringgreen;
+    }
+
+.line {
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
 /* ==== header ==== */
+header {
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px #ccc;
+}
+    header .container {
+        height: 100%;
+        padding: 10px 0;
+    }
+    #logo {
+        width: 20%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+        #logo img {
+            height: 60px;
+            width: 60px;
+        }
+    header .search {
+        width: 20%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+        .search input {
+            background-color: #b9d6f2;
+            outline: none;
+            border: none;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+    nav {
+        width: 60%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+        nav ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        ul li:not(:first-child) {
+            margin-left: 15px;
+        }
+        nav .btn {
+            text-transform: uppercase;
+            border: 2px solid #061a40;
+            padding: 5px 20px;
+            font-weight: 600;
+        }
+            .signup-btn {
+                color: #fff;
+                background-color: #061a40;
+                border: none;
+            }
+        header a {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+/* ==== landing page ==== */
+.lp {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 0 50px 0;
+}
+    .slider {
+        width: 300%;
+        overflow: hidden;
+        height: 100%;
+    }
+        .slide {
+            width: 33.33%;
+            padding: 0 1%;
+            height: 100%;
+            align-items: center;
+            position: relative;
+        }
+            .slide-img img {
+                width: 100%;
+            }
+            .lp-btn {
+                background: #061a40;
+                color: #fff;
+                text-transform: uppercase;
+                border-radius: 0;
+                padding: 10px 50px;
+                font-weight: 600;
+            }
+            .indicator {
+                position: absolute;
+                bottom: 10px;
+                width: 150px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+                .indicator div {
+                    width: 30px;
+                    height: 5px;
+                    background: #b9d6f2;
+                    border-radius: 10px;
+                }
+                    .indicator div:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                    .indicator .line-1 {
+                        background: #061a40;
+                        transition: 1s;
+                    }
+                    .indicator .line-2 {
+                        background: #061a40;
+                        transition: 1s;
+                    }
+                    .indicator .line-3 {
+                        background: #061a40;
+                        transition: 1s;
+                    }
+
+
+/* ==== services ==== */
+.s-card {
+    border: 2px solid #4476BB;
+    height: 350px;
+    padding: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+    .sc-img {
+        height: 40%;
+        overflow: hidden;
+        width: 50%;
+        margin: 0 auto;
+        border-bottom: 1px solid #4476BB;
+        padding: 0;
+        align-items: center;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    }
+        .sc-img img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+/* ====  courses ==== */
+.cs-cont {
+    overflow: hidden;
+    width: 100%;
+}
+    .c-slider {
+        width: 100%;
+    }
+    .c-slide {
+        width: 19.3%;
+        height: 350px;
+        box-shadow: 1px 2px 2px #ccc;
+        border-radius: 5px;
+    }
+        .cs-video {
+            height: 50%;
+            width: 100%;
+            overflow: hidden;
+        }
+            .cs-video img {
+                width: 100%;
+                height: 100%;
+            }
+        .cs-tutor {
+            font-weight: 500;
+            font-size: .9rem;
+            margin: 5px 0;
+        }
+        .cs-price {
+            outline: none;
+            border: none;
+            color: #061a40;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+.lcs-cont {
+    width: 100%;
+    overflow: hidden;
+}
+    .lc-slider {
+        width: 100%;
+    }
+        .lc-slide {
+            min-width: 25%;
+        }
+            .lc-slide button {
+                margin: 5px auto;
+                display: block;
+            }
+
+/* ==== CTA ==== */
+.cta {
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url('../img/wavy\ image\ .jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+    .cta-btn {
+        background: #fff;
+        padding: 10px 50px;
+        color: #061a40;
+        font-weight: 600;
+        box-shadow: 1px 1px 1px 3px rgba(0,0,0,0.1);
+        border: none;
+        outline: none;
+        width: 250px;
+        box-sizing: border-box;
+        border-radius: 0;
+        text-transform: uppercase;
+    }
+    .cta-img {
+        height: 100%;
+    }
+    .cta-img img {
+        height: 350px;
+        line-height: 100%;
+        display: block;
+        margin: auto;
+    }
+
+/* ==== categries ==== */
+.ct-card {
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin-bottom: 20px;
+}
+    .ct-card:hover {
+        border: 2px solid #061a40;
+    }
+    .ct-img {
+        height: 70%;
+        width: 100%;
+        overflow: hidden;
+    }
+        .ct-img img {
+            width: 100%;
+            height: 100%;
+        }
