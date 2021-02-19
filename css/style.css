@@ -372,3 +372,49 @@ header {
             width: 100%;
             height: 100%;
         }
+
+/* ==== testimonials ==== */
+.ts-cont {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+    .t-slider {
+        box-sizing: border-box;
+        height: auto;
+        position: relative;
+    }
+        .t-slider input {
+            display: none;
+        }
+        .t-slider img {
+            height: 150px;
+            width: 150px;
+        }
+        .t-slider .current {
+            height: 200px;
+            width: 200px;
+            transition: 1s;
+            border: 3px solid #061a40;
+            border-radius: 50%;
+        }
+        .t-slider .nextBtn, .t-slider .prevBtn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+        }
+            .t-slider .nextBtn img, .t-slider .prevBtn img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .t-slider .nextBtn {
+                right: -20px;
+            }
+            .t-slider .prevBtn {
+                left: -20px;
+            }
