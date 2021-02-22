@@ -1,47 +1,32 @@
-const courseList = document.querySelectorAll('.course-list label');
-const buttons = document.querySelectorAll('.desc-cont input');
+const searchBtn = document.querySelector('.search-btn');
+const openSearchBtn = document.querySelector('.open-search');
+const closeSearchBtn = document.querySelector('.close-search');
+const search = document.querySelector('.m-search');
+const overlay = document.querySelector('.overlay');
+const navbar = document.querySelector('.m-navbar');
+const closeNavbar = document.querySelector('.close-nav-btn');
+const burger = document.querySelector('#burger');
 
-const myFunc = ()=> {
-    courseList.forEach((course, index) => {
-        course.addEventListener('click', ()=> {
-            myFunc();
-            course.classList.add('.checked');
-            buttons.forEach((button, index)=> {
-                if(buttons[index].checked) {
-                    courseList[index].classList.remove('checked');
-                } else {
-                    course.classList.add('checked');
-                }
-            });
-        });
-        
-    });
+searchBtn.onclick = ()=> {
+    search.classList.toggle('active');
+    closeSearchBtn.classList.toggle('d-none');
+    openSearchBtn.classList.toggle('d-none');
 };
 
-window.onload = myFunc();
-
-
-//course slider on mobile
-let number = 1;
-setInterval(function(){
-    document.querySelector(`#slide${number}`).checked = true;
-    number++;
-    if (number > 4){
-        number=1;
-    }
-}, 4000);
-
-const form = document.querySelector('.contact-form');
-const overlay = document.querySelector('.overlay');
-const thanks = document.querySelector('.thanks');
-
-form.addEventListener('submit', (e)=> {
-    e.preventDefault();
+burger.onclick = ()=> {
+    navbar.classList.add('active');
+    closeNavbar.classList.add('active');
     overlay.classList.add('active');
-    thanks.classList.add('active');
+};
 
-    overlay.addEventListener('click', ()=> {
-        overlay.classList.remove('active');
-        thanks.classList.remove('active');
-    });
-});
+closeNavbar.onclick = ()=> {
+    navbar.classList.remove('active');
+    closeNavbar.classList.remove('active');
+    overlay.classList.remove('active');
+};
+
+overlay.onclick = ()=> {
+    navbar.classList.remove('active');
+    closeNavbar.classList.remove('active');
+    overlay.classList.remove('active');
+};
