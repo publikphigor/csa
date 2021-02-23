@@ -659,6 +659,146 @@ header {
         font-weight: 600;
     }
 
+/* ==== LOGIN PAGE ==== */
+.login-cont {
+    width: 90% !important;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px #ccc;
+    position: relative;
+    height: 80vh;
+    overflow: visible;
+}
+.left-box {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    background-color: #4476BB;
+    color: #fff;
+    z-index: 999;
+} 
+    .left-box.active {
+        transform: translateX(100%);
+        transition: transform 0.2s ease;
+    }
+
+.welcome-back {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+    .welcome-back.active {
+        display: none;
+    }
+
+.hello-friend {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+    .hello-friend.active {
+        display: block;
+    }
+    
+
+.right-box {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    color: #061a40;
+    z-index: 99;
+} 
+    .right-box.active {
+        transform: translateX(-100%);
+        transition: transform 0.2s ease;
+    }
+
+
+    .create-account {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+    }
+        .create-account.active {
+            display: none;
+        }
+    .my-form {
+        width: 100%;
+        display: inline-block;
+    }
+    .use-account {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        display: none;
+    }
+        .use-account.active {
+            display: block;
+            position: relative;
+            left: 0;
+        }
+        .my-form input:not(:last-child) {
+            background-color: #fff;
+            color: #061a40;
+            width: 100%;
+            padding: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        .submit-btn {
+            display: block;
+            padding: 5px 20px;
+            box-sizing: border-box;
+            color: #fff;
+            background: #061a40;
+            margin: 20px auto 0;
+            border-radius: 0;
+            border: none;
+            transition: 0.5s;
+            font-weight: 500;
+            max-width: 200px;
+        }
+            .submit-btn:hover {
+                color: #fff;
+                letter-spacing: 2px;
+                transition: 0.5s;
+            }
+
+        .m-login {
+            width: 95%;
+            margin: 0 auto;
+            height: auto;
+            max-height: 65vh;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            padding: 20px 0;
+            box-shadow: 2px 2px 2px #ccc;
+        }
+            .m-form {
+                width: 100%;
+            }
+            .m-form input:not(type[submit]){
+                padding: 20px 10px;
+                border: 0;
+                outline: 0;
+                width: 100%;
+                box-sizing: border-box;
+                border-bottom: 1px solid #f4f4f4;
+            }
+            .switch {
+                color: #061a40;
+                cursor: pointer;
+            }
+                .switch:hover {
+                    font-weight: 500;
+                }
+
 footer {
     margin: 0;
     overflow: hidden;
@@ -714,6 +854,9 @@ footer {
         }
 
 @media screen and (max-width:1024px){
+    .m-login {
+        display: block;
+    }
     .newsletter {
         width: 100%;
         overflow-x: hidden;

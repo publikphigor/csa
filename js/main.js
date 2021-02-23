@@ -30,3 +30,22 @@ overlay.onclick = ()=> {
     closeNavbar.classList.remove('active');
     overlay.classList.remove('active');
 };
+
+
+const loginBtn = document.querySelector('.switch1');
+const signupBtn = document.querySelector('.switch2');
+const loginPage = document.querySelector('.l-form');
+const signupPage = document.querySelector('.s-form');
+
+loginBtn.onclick = ()=> {
+    loginPage.classList.remove('d-none');
+    signupPage.classList.add('d-none');
+    console.log('works');
+};
+
+signupBtn.onclick = ()=> {
+    loginPage.classList.add('d-none');
+    signupPage.classList.remove('d-none');
+    console.log('works');
+
+};
