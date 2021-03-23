@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Crypto Space Academy</title>
+    <link rel="stylesheet" href="font/icons/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="font/Rajdhani/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==== DASHBOARD ==== -->
+    <div class="d-cont">
+        <div class="sidebar">
+            <div class="s-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="fa fa-th-large mr-2"></i><span>Dashboard</span></a></li>
+                    <li><a href="my-course.html"><i class="fa fa-book mr-2"></i><span>My Course</span></a></li>
+                    <li><a href="videos.html"><i class="fa fa-video-camera mr-2"></i><span>Videos</span></a></li>
+                    <li><a href="referrals.html"><i class="fa fa-users mr-2"></i><span>Referrals</span></a></li>
+                    <li><a href="messages.html"><i class="fa fa-envelope mr-2"></i><span>Messages</span><span class="m-count">6</span></a></li>
+                    <li><a href="payment.html"><i class="fa fa-credit-card mr-2"></i><span>Payments</span></a></li>
+                    <li><a href="calendar.html"><i class="fa fa-calendar mr-2"></i><span>Calendar</span></a></li>
+                </ul>
+            </div>
+            <p class="logout"><i class="fa fa-sign-out mr-2"></i><span>Logout</span></p>
+        </div>
+        <div class="main">
+            <div class="m-header d-flex justify-content-between align-items-center">
+                <h3 class="text-brand2 sh-3">Dashboard</h3>
+                <div class="burger" onclick="showNav(navbar)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="m-body">
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-8">
+                        <div class="u-info">
+                            <img src="img/Ellipse 4.png" alt="">
+                            <div>
+                                <h3 class="text-white sh-3">Oladele Mario</h3>
+                                <p class="uim text-white">mario_don@gmail.com</p>
+                                <p class="text-white ui-cc">Completed Courses: 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="ref-b">
+                            <h4 class="text-black rb-title">Referral Bonus</h4>
+                            <hr class="rb-line">
+                            <p class="rb-aa">Amount Available</p>
+                            <h3 class="rb-price">#34,000</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="m-courses">
+                            <div class="d-flex justify-content-between align-items-center mch">
+                                <h4 class="sh-3 mc-t">Courses</h4>
+                                <i class="fa fa-info"></i>
+                            </div>
+                            <div class="d-flex mc-btns">
+                                <button class="mc-btn active c-1">All</button>
+                                <button class="mc-btn c-2">Completed</button>
+                                <button class="mc-btn c-3">Favorites</button>
+                            </div>
+                            <div class="mc-cards">
+                                <div class="all-c">
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comp-c d-none">
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">completed- Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fav-c d-none">
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">favorites - Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-card">
+                                        <img src="img/code.jpg" alt="">
+                                        <div>
+                                            <h4 class="mcc-t">Understanding crypto trading for beginners</h4>
+                                            <div class="d-flex mc-i">
+                                                <p class="text-blue mr-2 t-l">36hrs left</p>
+                                                <p class="text-blue c-comp">Completed 13%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-4">
+                        <div class="msgs"> 
+                            <div class="d-flex justify-content-between align-items-center mh">
+                                <h4 class="sh-3 mh-t">messages</h4>
+                                <i class="fa fa-info"></i>
+                            </div>
+                            <div>
+                                <p class="msg read">
+                                    <span class="m-box"></span>
+                                    <span>Focus on tasks that have to be done, without missing any details.</span>
+                                </p>
+                                <p class="msg">
+                                    <span class="m-box"></span>
+                                    <span>Set priorities and decide which tutorials should be done first.</span>
+                                </p>
+                                <p class="msg">
+                                    <span class="m-box"></span>
+                                    <span>Focus on tasks that have to be done, without missing any details.</span>
+                                </p>
+                                <p class="msg">
+                                    <span class="m-box"></span>
+                                    <span>Track your progress and feel a sense of accomplishment.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
