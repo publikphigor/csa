@@ -39,7 +39,7 @@ a {
 /* custom styles */
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
   }
   
   /* Track */
@@ -1025,7 +1025,6 @@ header {
     .main {
         height: 100%;
         width: 80%;
-        overflow: hidden;
     }
         .m-header {
             margin: 25px 0;
@@ -1200,6 +1199,9 @@ header {
                         color: #B3B8BD;
                         font: normal normal 600 18px/22px Rajdhani;
                     }
+                        .mcc-t:hover {
+                            color: #061a40;
+                        }
                     .mc-i {
                         margin: 0;
                     }
@@ -1290,7 +1292,127 @@ header {
                 .read span {
                     color: #B3B8BD;
                 }
-            
+
+    /* ==== COURSES PAGE ==== */
+    .pv-cont {
+        height: 500px;
+        overflow-y: scroll;
+    }
+        .pv-card {
+            display: block;
+            height: 150px;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+            .pv-card img {
+                height: 100%;
+                width: 100%;
+            }
+            .pv-card i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 3rem;
+                font-weight: 300;
+                cursor: pointer;
+            }
+            .pcv-t {
+                position: relative;
+                bottom: 30px;
+                font-size: 1.2rem;
+            }
+        .top-c {
+            margin: 20px auto 0;
+            background: #fff;
+            box-sizing: border-box;
+            width: 95%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: -5px -2px 2px 2px #52575D1A, 5px 2px 2px 2px #52575D1A;
+            padding: 20px;
+        }
+            .top-cd img {
+                width: 100%;
+                max-height: 150px;
+            }
+            .tct h3 {
+                font: normal normal bold .9rem Rajdhani;
+                margin: 3px 0;
+            }
+            .tct-stars i {
+                color: #266DD3;
+            }
+
+    /* ==== VIDEO PAGE ==== */
+    .cv-t {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .mv-img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+    } 
+        .mv-img img {
+            height: 100%;
+            width: 100%;
+        }
+        .mv-img i {
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    .dh {
+        width: 100%;
+        height: 40px;
+        border: 2px solid #266DD3;
+    }
+        .dh h3 {
+            width: 33.333%;
+            text-align: center;
+            margin: 0;
+            line-height: 40px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #707070;
+        }
+        .dh h3.active, .dh h3:hover {
+            background: #B9D6F2;
+            color: #266DD3;
+        }
+    .ds-cont {
+        background: #F7F5F5;
+        margin: 10px 0 20px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+        .dsc-h {
+            font-size: 1.2rem;
+        }
+        .dsc-h.bb {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 3px;
+        }
+        .c-ot {
+            margin: 5px 0;
+        }
+            .c-ot span:first-child {
+                margin-right: 20px;
+            }
+            .c-ot span:last-child {
+                color: #079D58;
+                font-weight: 300;
+                font-size: .9rem;
+            }
 footer {
     margin: 0;
     overflow: hidden;

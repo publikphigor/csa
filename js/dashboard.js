@@ -31,13 +31,3 @@ favCourseBtn.onclick = ()=>{
     compCourse.classList.add('d-none');
     allCourse.classList.add('d-none');
 };
-
-
-//navbar slide out
-const navbar = document.querySelector('.sidebar');
-const burger = document.querySelector('.burger');
-
-function showNav(navbar) {
-    navbar.classList.toggle('active');
-    burger.classList.toggle('active');
-};
