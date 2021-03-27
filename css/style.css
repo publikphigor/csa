@@ -1669,6 +1669,68 @@ header {
         }
 }
 
+/* PAYMENT PAGE */
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+.p-table {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px #52575D1A, -2px -2px 2px 2px #52575D1A;
+}
+    thead {
+        background: #E3E9EF;
+        font-weight: bold;
+    }
+        thead th {
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+    tbody td {
+        padding: 5px 10px;
+        min-width: 130px;
+    }
+        tbody tr:hover {
+            background: #EAF2FF;
+        }
+        tbody td.d-flex {
+            min-width: 350px;
+        }
+    .tc {
+        display: inline-block;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+    }
+        .tc.t-red {
+            background: #ED4C4C;
+        }
+        .tc.t-green {
+            background: #1BC167;
+        }
+        .tc.t-orange {
+            background: #F4DB50;
+        }
+        .tc-btn {
+            border: none;
+            outline: none;
+            border: 1px solid #508FF4;
+            color: #508FF4;
+            border-radius: 8px;
+            padding: 2px 10px;
+            box-sizing: border-box;
+            background: transparent;
+        }
+            .tc-btn:hover {
+                border: none;
+                background: #508FF4;
+                color: #fff;
+            }
 
 
 footer {
