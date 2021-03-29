@@ -936,6 +936,107 @@ header {
         }
 }
 
+footer {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 0;
+    background: url('../img/\ footer\ image.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+    .newsletter input {
+        padding: 20px;
+        outline: none;
+        border-radius: 0;
+        border: 2px solid #061a40;
+        box-sizing: border-box;
+    }
+        .newsletter input::placeholder {
+            font-size: .9rem;
+            font-weight: 500;
+        }
+    .newsletter input[type=submit] {
+        border: none;
+        background: #061a40;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .ft-section {
+        width: 25%;
+    }
+        .ft-section a {
+            display: block;
+            font-weight: 600;
+            font-size: .9rem;
+            transition: .5s;
+        }
+            .ft-section a:hover {
+                background: none;
+                text-decoration: underline !important;
+                color: #061a40 !important;
+            }
+        .ft-logo img {
+            width: 86px;
+            height: 86px;
+        }
+        .ft-section .text-brand {
+            font-size: 1rem;
+        }
+        .ft-section  a {
+            margin-bottom: 10px;
+        }
+
+@media screen and (max-width:1024px){
+    .m-login {
+        display: block;
+    }
+    .newsletter {
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .newsletter input {
+        padding: 10px 5px;
+    }
+        .newsletter input[type=submit] {
+            width: 30%;
+            font-size: .7rem;
+        }
+        .newsletter input[type=text] {
+            width: 70%;
+        }
+        .newsletter input::placeholder {
+            font-size: .8rem;
+        }
+        .submit-btn {
+            padding: 10px 10px !important;
+            margin-bottom: 10px;
+        }
+    .footer-s {
+        justify-content: space-around !important;
+    }
+    .ft-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .s-order1, .s-order2, .s-order3 {
+        position: relative;
+    }
+    .s-order1 {
+        order: 1;
+    }
+    .s-order2 {
+        order: 2;
+    }
+    .s-order3 {
+        order: 3;
+    }
+}
+
 
 /* ==== DASHBOARD ==== */
 .d-cont {
@@ -1641,7 +1742,7 @@ header {
                 }
 @media screen and (max-width:1024px) {
     .mc-btn {
-        padding: 5px 7px;
+        padding: 5px;
         font-size: .8rem;
     }
     .action-btns {
@@ -1668,6 +1769,7 @@ header {
             font-size: .9rem;
         }
 }
+
 
 /* INBOX PAGE */
 .inbox-page {
@@ -1918,115 +2020,91 @@ header {
 @media screen and (max-width:1024px) {
     .db-card {
         width: 95%;
-        max-width: 330px;
+        max-width: 340px;
         margin: 0 auto 20px;
     }
+        .db-card:last-child {
+            margin: 0 auto 20px;
+        }
     .c-sales {
-        max-width: 330px;
+        max-width: 340px;
         margin: auto;
     }
 }
 
-
-
-
-footer {
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
-    padding: 50px 0;
-    background: url('../img/\ footer\ image.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* manage course page */
+.mc-sidebar .db-card {
+    width: 95%;
 }
-    .newsletter input {
-        padding: 20px;
-        outline: none;
-        border-radius: 0;
-        border: 2px solid #061a40;
-        box-sizing: border-box;
+
+.mcc-cont {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 2px #52575D1A, -1px -1px 2px 2px #52575D1A;
+    padding: 20px;
+}
+
+.add-course:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mc-li {
+    width: 100%;
+    height: 230px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 2px #52575D1A, -1px -1px 2px 2px #52575D1A;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+    .mcl-img {
+        height: 50%;
+        width: 100%;
     }
-        .newsletter input::placeholder {
-            font-size: .9rem;
-            font-weight: 500;
+        .mcl-img img {
+            height: 100%;
+            width: 100%;
         }
-    .newsletter input[type=submit] {
-        border: none;
-        background: #061a40;
-        color: #fff;
-        font-size: .9rem;
+    .mc-text h3, .mc-text p, .mc-text span {
+        font-size: .8rem;
+        margin: 5px 0;
         font-weight: 600;
     }
+    .mc-text .dbc-btn {
+        font-size: .7rem;
+        padding: 5px;
+        margin: 0;
+        background: #CAFADA;
+        outline: none;
+        border: none;
+    }
+    .c-burg {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+        .c-burg div {
+            background: #000;
+            width: 12px;
+            height: 2px;
+            margin: 0 auto 1px;
+        }
+        .c-burg:hover div {
+            background: #266DD3;
+        }
+        .c-burg:hover {
+            border:  1px solid #266DD3;
+        }
+        .c-burg div:last-child {
+            margin-bottom: 0;
+        }
 
-    .ft-section {
-        width: 25%;
-    }
-        .ft-section a {
-            display: block;
-            font-weight: 600;
-            font-size: .9rem;
-            transition: .5s;
-        }
-            .ft-section a:hover {
-                background: none;
-                text-decoration: underline !important;
-                color: #061a40 !important;
-            }
-        .ft-logo img {
-            width: 86px;
-            height: 86px;
-        }
-        .ft-section .text-brand {
-            font-size: 1rem;
-        }
-        .ft-section  a {
-            margin-bottom: 10px;
-        }
-
-@media screen and (max-width:1024px){
-    .m-login {
-        display: block;
-    }
-    .newsletter {
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    .newsletter input {
-        padding: 10px 5px;
-    }
-        .newsletter input[type=submit] {
-            width: 30%;
-            font-size: .7rem;
-        }
-        .newsletter input[type=text] {
-            width: 70%;
-        }
-        .newsletter input::placeholder {
-            font-size: .8rem;
-        }
-        .submit-btn {
-            padding: 10px 10px !important;
-            margin-bottom: 10px;
-        }
-    .footer-s {
-        justify-content: space-around !important;
-    }
-    .ft-section {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-    .s-order1, .s-order2, .s-order3 {
-        position: relative;
-    }
-    .s-order1 {
-        order: 1;
-    }
-    .s-order2 {
-        order: 2;
-    }
-    .s-order3 {
-        order: 3;
-    }
-}
