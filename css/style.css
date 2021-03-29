@@ -1669,6 +1669,101 @@ header {
         }
 }
 
+/* INBOX PAGE */
+.inbox-page {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+    .ibx-ul {
+        width: 28%;
+        height: 100%;
+        background: #fff;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+        .search-ibx {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+            .search-ibx::placeholder {
+                font-size: .9rem;
+            }
+        .ibx-li {
+            padding: 10px;
+            width: 100%;
+            height: 70px;
+            margin: 0;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            position: relative;
+        }
+            .ibx-li.active, .ibx-li:hover {
+                background: #B9D6F2;
+                border-left: 2px solid #266DD3;
+                cursor: pointer;
+            }
+            .ibx-img {
+                height: 45px;
+                width: 45px;
+                display: block;
+                margin: 0;
+            }
+                .ibx-img img {
+                    width: 100%;
+                    height: 100%;
+                }
+            .ibx-text {
+                width: 80%;
+            }
+            .ibx-m-name {
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            .ibx-msg {
+                width: 100%;
+                height: 5px;
+                margin: 5px 0;
+                line-height: normal;
+            }
+            .ibx-date {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+        .ibx-msg-ex {
+            width: 50%;
+            background: #FAFAFA;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #1F1E1E;
+        }
+        .cps-msg {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background: #B9D6F2;
+            color: #266DD3;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+
+
 /* PAYMENT PAGE */
 .overflow-x-scroll {
     overflow-x: scroll;
