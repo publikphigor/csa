@@ -1763,6 +1763,26 @@ header {
             margin: 0 10px;
         }
 
+@media screen and (max-width:1024px) {
+    .inbox-page {
+        display: block;
+    }
+        .ibx-ul {
+            width: 95%;
+            margin: 0 auto 20px;
+        }
+        .ibx-li.active {
+            height: auto;
+            align-items: flex-start;
+        }
+            .ibx-li.active .ibx-msg {
+                height: auto;
+            }
+        .ibx-msg-ex {
+            display: none;
+        }
+}
+
 
 /* PAYMENT PAGE */
 .overflow-x-scroll {
