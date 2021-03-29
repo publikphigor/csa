@@ -6,9 +6,9 @@ const openMessage = ()=>{
         message.addEventListener('click', (e)=>{
             clearActive();
             if(e.target.classList.contains('ibx.li')) {
-                e.target.classList.add('active');
+                e.target.classList.toggle('active');
             } else {
-                e.target.closest('.ibx-li').classList.add('active');
+                e.target.closest('.ibx-li').classList.toggle('active');
             }
 
             let username = message.querySelector('.ibx-m-name').innerText;

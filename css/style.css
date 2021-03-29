@@ -1781,6 +1781,9 @@ header {
         .ibx-msg-ex {
             display: none;
         }
+        .cps-msg {
+            margin-bottom: 20px;
+        }
 }
 
 
@@ -1846,6 +1849,85 @@ header {
                 background: #508FF4;
                 color: #fff;
             }
+
+
+/* =====
+        ADMIN DASHBOARD
+                        ===== */
+.db-card {
+    width: 33%;
+    max-width: 320px;
+    height: 150px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px #52575D1A, -1px -1px 3px 3px #52575D1A;
+    margin-bottom: 20px;
+}
+    .db-card:last-child {
+        margin-right: 20px;
+    }
+    .db-card .rb-title {
+        padding: 10px 0 0 10px;
+    }
+    .db-card .rb-line {
+        margin: 5px 0;
+    }
+    .db-card .rb-aa {
+        color: #B3B8BD;
+        font-weight: 600;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .db-card h3, .db-card a {
+        margin-left: 10px;
+    }
+    .dbc-btn {
+        background: #F3CDF8;
+        color: #053A86;
+        padding: 3px 10px;
+        border-radius: 10px;
+    }
+        .dbc-btn:hover {
+            color: #053A86;
+            font-weight: 600;
+        }
+    .dbc-a {
+        color: #053A86;
+    }
+        .dbc-a:hover {
+            color: #053A86;
+            font-weight: 600;
+        }
+.c-sales {
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px #52575D1A, -1px -1px 3px 3px #52575D1A;
+    padding: 20px;
+}
+    .dcs-img {
+        width: 100%;
+        height: 250px;    
+    }
+        .dcs-img img {
+            height: 100%;
+            width: 100%;
+        }
+
+@media screen and (max-width:1024px) {
+    .db-card {
+        width: 95%;
+        max-width: 330px;
+        margin: 0 auto 20px;
+    }
+    .c-sales {
+        max-width: 330px;
+        margin: auto;
+    }
+}
+
+
 
 
 footer {
