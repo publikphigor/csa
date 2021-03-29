@@ -2051,6 +2051,7 @@ footer {
     border-radius: 8px;
     box-shadow: 1px 1px 2px 2px #52575D1A, -1px -1px 2px 2px #52575D1A;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .add-course:hover {
@@ -2117,3 +2118,112 @@ footer {
             margin-bottom: 0;
         }
 
+    /* add course */
+    .new-course {
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+    }
+        .cancel-add-form {
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: #061A40;
+            font-weight: 600;
+        }
+        .new-course .nc-form {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nc-form fieldset {
+            border: 2px dashed #BCBCCB;
+            padding: 20px;
+        }
+        .nc-form legend {
+            width: 120px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .nc-form input {
+            padding: 15px 5px;
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #BCBCCB;
+            font-size: 1.2rem;
+        }
+        .nc-img {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+            .nc-img img {
+                height: 150px;
+                width: 150px;
+                display: block;
+            }
+            .nc-img div {
+                width: 60%;
+            }
+            .nc-img input {
+                width: 100%;
+            }
+        .nc-split {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+            .nc-split input {
+                width: 48%;
+            }
+        .add-module {
+            border: none;
+            outline: none;
+            background: none;
+            color: #061A40;
+            font-size: .9rem;
+            margin: 10px 0;
+            font-weight: 600;
+            padding: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+        }
+        .nc-submit {
+            display: flex;
+            justify-content: flex-end;
+        }
+            .nc-submit input {
+                padding: 10px 20px;
+                width: 150px;
+                box-sizing: border-box;
+                margin-top: 10px;
+                background: #E8E9EA;
+                color: #555;
+                font-weight: 600;
+            }
+
+@media screen and (max-width:1024px) {
+    .nc-form fieldset {
+        padding: 10px;
+    }
+    .nc-img {
+        flex-direction: column;
+    }
+        .nc-img div {
+            width: 100%;
+        }
+        .nc-img img {
+            height: 120px;
+            width: 200px;
+        }
+        .nc-form input {
+            padding: 10px 5px;
+            font-size: 1rem;
+        }
+}

@@ -47,7 +47,7 @@
                                 <h3 class="text-black sh-3">Courses</h3>
                                 <span class="add-course text-brand"><i class="fa fa-plus-circle mr-2"></i>Add course</span>
                             </div>
-                            <div class="row my-2">
+                            <div class="row my-2 mc-ul">
                                 <div class="col-6 col-lg-4">
                                     <div class="mc-li">
                                         <div class="mcl-img">
@@ -300,6 +300,37 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- add course -->
+                            <div class="new-course d-none">
+                                <span class="text-black cancel-add-form">cancel</span>
+                                <form class="nc-form">
+                                    <fieldset>
+                                        <legend>Course details</legend>
+                                        <div class="nc-img">
+                                            <img src="img/code.jpg" alt="">
+                                            <div>
+                                                <input type="text" placeholder="Course Title">
+                                                <input type="text" placeholder="Course Price">
+                                            </div>
+                                        </div>
+                                        <div class="nc-input">
+                                            <input type="text" placeholder="Course description">
+                                            <input type="text" placeholder="Course outline">
+                                        </div>
+                                        <div class="add-n-mod">
+                                            <div class="nc-split">
+                                                <input type="text" placeholder="Module number">
+                                                <input type="text" placeholder="Module Title">
+                                            </div>
+                                        </div>
+                                        <span class="add-module">add module</span>
+                                        <div class="nc-submit">
+                                            <input type="submit" value="Add course">
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -342,7 +373,7 @@
         </div>
     </div>
 
-
+    <script src="js/m-course.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>
