@@ -22,5 +22,6 @@ addModule.onclick = ()=>{
     formModule.innerHTML += `<div class="nc-split">
     <input type="text" placeholder="Module number">
     <input type="text" placeholder="Module Title">
-</div>`
+</div>
+<input type="text" placeholder="Link to video" class="mb-3">`
 };

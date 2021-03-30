@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="font/Montserrat/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- ==== HEADER ==== -->
     <header>
@@ -40,7 +42,7 @@
             <div class="burger1"></div>
             <div class="burger2"></div>
             <div class="burger3"></div>
-        </div>  
+        </div>
         <div id="m-logo">
             <a href="index.html">
                 <img src="img/logo.png" alt="">
@@ -87,20 +89,21 @@
         <div class="right-box">
             <div class="create-account">
                 <h1 class="f-style">Login</h1>
-                <form action="" class="my-form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                <p id="login_feed"></p>
+                <form class="my-form" role="form" id="login_form">
+                    <input type="email" placeholder="Email" name="Email">
+                    <input type="password" placeholder="Password" name="Password">
                     <input type="submit" value="LOGIN" class="btn submit-btn">
                 </form>
             </div>
             <div class="use-account">
                 <h1 class="f-style">Create account</h1>
-                <p>Fill in your details below</p>
-                <form class="my-form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm password">
+                <p id="reg_feed">Fill in your details below</p>
+                <form class="my-form" role="form" id="registration_form">
+                    <input type="text" placeholder="Name" name="Name">
+                    <input type="email" placeholder="Email" name="Email">
+                    <input type="password" placeholder="Password" name="Password">
+                    <input type="password" placeholder="Confirm password" name="CPassword">
                     <input type="submit" value="SIGNUP" class="btn submit-btn">
                 </form>
             </div>
@@ -110,10 +113,10 @@
     <!-- ==== MOBILE VERSION ==== -->
     <div class="m-login">
         <div class="l-form d-none">
-            <form class="m-form">
+            <form class="m-form" role="form">
                 <h3 class="text-center text-brand2 sh-2">Login</h3>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="email" placeholder="Email" name="Email">
+                <input type="password" placeholder="Password" name="Password">
                 <input type="submit" value="LOGIN" class="submit-btn">
                 <p class="quest text-center">Don't have an account? <span class="switch switch2">Signup.</span></p>
             </form>
@@ -132,7 +135,10 @@
     </div>
 
     <script src="js/slide.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

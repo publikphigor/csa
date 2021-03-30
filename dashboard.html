@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="font/Rajdhani/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- ==== DASHBOARD ==== -->
     <div class="d-cont">
@@ -19,7 +21,7 @@
                 <ul>
                     <li><a href="dashboard.html" class="active"><i class="fa fa-th-large mr-2"></i><span>Dashboard</span></a></li>
                     <li><a href="my-course.html"><i class="fa fa-book mr-2"></i><span>My Course</span></a></li>
-                    <li><a href="video.html"><i class="fa fa-video-camera mr-2"></i><span>Videos</span></a></li>
+                    <!-- <li><a href="video.html"><i class="fa fa-video-camera mr-2"></i><span>Videos</span></a></li> -->
                     <li><a href="referrals.html"><i class="fa fa-users mr-2"></i><span>Referrals</span></a></li>
                     <li><a href="messages.html"><i class="fa fa-envelope mr-2"></i><span>Messages</span><span class="m-count">6</span></a></li>
                     <li><a href="payment.html"><i class="fa fa-credit-card mr-2"></i><span>Payments</span></a></li>
@@ -43,9 +45,9 @@
                         <div class="u-info">
                             <img src="img/Ellipse 4.png" alt="">
                             <div>
-                                <h3 class="text-white sh-3">Oladele Mario</h3>
-                                <p class="uim text-white">mario_don@gmail.com</p>
-                                <p class="text-white ui-cc">Completed Courses: 4</p>
+                                <h3 class="text-white sh-3" id="name_user">Oladele Mario</h3>
+                                <p class="uim text-white" id="email_user">mario_don@gmail.com</p>
+                                <p class="text-white ui-cc">Completed Courses: <span id="courses_completed"></span></p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +56,7 @@
                             <h4 class="text-black rb-title">Referral Bonus</h4>
                             <hr class="rb-line">
                             <p class="rb-aa">Amount Available</p>
-                            <h3 class="rb-price">#34,000</h3>
+                            <h3 class="rb-price" id="waalet_derts">#34,000</h3>
                         </div>
                     </div>
                 </div>
@@ -176,7 +178,7 @@
 
 
                     <div class="col-12 col-lg-4">
-                        <div class="msgs"> 
+                        <div class="msgs">
                             <div class="d-flex justify-content-between align-items-center mh">
                                 <h4 class="sh-3 mh-t">messages</h4>
                                 <i class="fa fa-info"></i>
@@ -207,6 +209,9 @@
     </div>
 
     <script src="js/navbar.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/confirm_log.js"></script>
     <script src="js/dashboard.js"></script>
 </body>
+
 </html>
