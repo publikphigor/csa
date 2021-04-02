@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox | Crypto Space Academy</title>
+    <link rel="stylesheet" href="font/icons/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="font/Rajdhani/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin">
+    <!-- ==== DASHBOARD ==== -->
+    <div class="d-cont">
+        <div class="sidebar">
+            <div class="side-space"></div>
+            <h3 class="text-black sh-3">Admin</h3>
+            <div class="s-nav">
+                <ul>
+                    <li><a href="adm-dashboard.html"><i class="fa fa-th-large mr-2"></i><span>Dashboard</span></a></li>
+                    <li><a href="manage-course.html"><i class="fa fa-book mr-2"></i><span>Manage Course</span></a></li>
+                    <!-- <li><a href="video.html"><i class="fa fa-video-camera mr-2"></i><span>Videos</span></a></li> -->
+                    <li><a href="users.html"><i class="fa fa-users mr-2"></i><span>Users</span></a></li>
+                    <li><a href="#"><i class="fa fa-calendar mr-2"></i><span>Calendar</span></a></li>
+                    <li><a href="adm-messages.html" class="active"><i class="fa fa-envelope mr-2"></i><span>Messages</span><span class="m-count">6</span></a></li>
+                    <li><a href="adm-payment.html"><i class="fa fa-credit-card mr-2"></i><span>Payments</span></a></li>
+                </ul>
+            </div>
+            <p class="logout"><i class="fa fa-sign-out mr-2"></i><span>Logout</span></p>
+        </div>
+        <div class="main">
+            <div class="m-header d-flex justify-content-between align-items-center">
+                <h3 class="text-brand2 sh-3">Dashboard</h3>
+                <div class="burger" onclick="showNav(navbar)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end action-btns">
+                <i class="fa fa-search mr-4"></i>
+                <i class="fa fa-bell mr-4"></i>
+                <i class="fa fa-user-o"></i>
+            </div>
+            <div class="inbox-page">
+                <div class="ibx-ul">
+                    <input type="text" class="search-ibx" placeholder="&#xF002; Search message or name..." style="font-family: FontAwesome">
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 4.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">Nick Fury</h3>
+                            <p class="ibx-msg">Nick Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 5</span>
+                    </div>
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 5.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">Adewale John</h3>
+                            <p class="ibx-msg">Adewale Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 5</span>
+                    </div>
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 6.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">Babs Makinde</h3>
+                            <p class="ibx-msg">Babs Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 4</span>
+                    </div>
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 7.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">Mr. No Mercy</h3>
+                            <p class="ibx-msg">Mr. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 3</span>
+                    </div>
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 5.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">PublikPhigor</h3>
+                            <p class="ibx-msg">PublikPhigor Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 3</span>
+                    </div>
+                    <div class="ibx-li">
+                        <div class="ibx-img"><img src="img/Ellipse 4.png" alt=""></div>
+                        <div class="ibx-text">
+                            <h3 class="ibx-m-name">Nick Fury</h3>
+                            <p class="ibx-msg">Nick Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis optio laudantium suscipit in quisquam, numquam dolorum? Omnis, quod rem! Aliquam, ducimus! Laboriosam molestias enim autem? Exercitationem excepturi, distinctio labore fugit sapiente ab veniam quae iste minima illum necessitatibus. Hic perspiciatis enim laudantium, unde pariatur fugiat tempore labore perferendis reprehenderit saepe aliquid beatae eligendi, nemo dolorem aperiam explicabo inventore sed debitis vero totam praesentium. Fugit voluptate necessitatibus, numquam fuga quia dolorum. Dolorum impedit placeat vel blanditiis pariatur assumenda reiciendis neque accusamus nesciunt incidunt magnam itaque porro necessitatibus perferendis molestiae optio eum, corporis ab? Beatae incidunt, sunt optio a aliquid exercitationem?</p>
+                        </div>
+                        <span class="ibx-date">Jan 2</span>
+                    </div>
+                </div>
+
+                <div class="ibx-msg-ex">
+                    <h3>Dear name,</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, ex! Repellendus, delectus! In quod voluptatum omnis aut optio blanditiis minima placeat? Vitae numquam animi optio illo maxime, dolore ipsa reprehenderit asperiores, laborum alias reiciendis rem aut, repellendus nisi in atque corporis consequuntur beatae odit commodi ut aperiam excepturi mollitia. Ducimus odio qui error voluptate amet illo inventore debitis molestiae voluptatem, quasi cupiditate et! Esse sapiente itaque at reprehenderit sunt, corrupti, quo enim totam molestias necessitatibus, commodi architecto magnam nesciunt officiis cupiditate deserunt assumenda alias cum quisquam! Unde necessitatibus quas quaerat id, laborum rerum consequuntur totam cum, voluptate, optio impedit magni.</p>
+                </div>
+
+                <button class="cps-msg">Compose Message</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/inbox.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

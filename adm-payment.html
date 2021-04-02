@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="font/Rajdhani/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="admin">
     <!-- ==== DASHBOARD ==== -->
     <div class="d-cont">
         <div class="sidebar">
+            <div class="side-space"></div>
+            <h3 class="text-black sh-3">Admin</h3>
             <div class="s-nav">
                 <ul>
-                    <li><a href="dashboard.html"><i class="fa fa-th-large mr-2"></i><span>Dashboard</span></a></li>
-                    <li><a href="my-course.html"><i class="fa fa-book mr-2"></i><span>My Course</span></a></li>
+                    <li><a href="adm-dashboard.html"><i class="fa fa-th-large mr-2"></i><span>Dashboard</span></a></li>
+                    <li><a href="manage-course.html"><i class="fa fa-book mr-2"></i><span>Manage Course</span></a></li>
                     <!-- <li><a href="video.html"><i class="fa fa-video-camera mr-2"></i><span>Videos</span></a></li> -->
-                    <li><a href="referrals.html"><i class="fa fa-users mr-2"></i><span>Referrals</span></a></li>
-                    <li><a href="messages.html"><i class="fa fa-envelope mr-2"></i><span>Messages</span><span class="m-count">6</span></a></li>
-                    <li><a href="payment.html" class="active"><i class="fa fa-credit-card mr-2"></i><span>Payments</span></a></li>
+                    <li><a href="users.html"><i class="fa fa-users mr-2"></i><span>Users</span></a></li>
                     <li><a href="#"><i class="fa fa-calendar mr-2"></i><span>Calendar</span></a></li>
+                    <li><a href="adm-messages.html"><i class="fa fa-envelope mr-2"></i><span>Messages</span><span class="m-count">6</span></a></li>
+                    <li><a href="adm-payment.html" class="active"><i class="fa fa-credit-card mr-2"></i><span>Payments</span></a></li>
                 </ul>
             </div>
             <p class="logout"><i class="fa fa-sign-out mr-2"></i><span>Logout</span></p>
@@ -42,10 +44,26 @@
                 <i class="fa fa-bell mr-4"></i>
                 <i class="fa fa-user-o"></i>
             </div>
+            <div class="col-12 col-lg-10">
+                <div class="c-sales">
+                    <div class="d-flex justify-content-between align-items-center mch">
+                        <h4 class="sh-3 mc-t">Lead sales</h4>
+                        <i class="fa fa-info"></i>
+                    </div>
+                    <div class="d-flex mc-btns">
+                        <button class="mc-btn active">All time</button>
+                        <button class="mc-btn">This year</button>
+                        <button class="mc-btn">This week</button>
+                        <button class="mc-btn">Today</button>
+                    </div>
+                    <div class="dcs-img"><img src="img/bar.png" alt=""></div>
+                </div>
+            </div>
             <div class="overflow-x-scroll">
                 <table class="p-table">
                     <thead>
                         <tr>
+                            <th>Name</th>
                             <th>Status</th>
                             <th>Amount</th>
                             <th>Date</th>
@@ -54,6 +72,10 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <img src="img/Oval-4.png" alt="">
+                                <span>Malcolm Quaday</span>
+                            </td>
                             <td><span class="t-red tc"></span><span>Cancelled</span></td>
                             <td>$30</td>
                             <td>23 July 2021</td>
@@ -63,6 +85,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-7.png" alt="">
+                                <span>Adeleke Johnson</span>
+                            </td>
                             <td><span class="t-green tc"></span><span>Completed</span></td>
                             <td>$100</td>
                             <td>23 July 2021</td>
@@ -72,6 +98,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-3.png" alt="">
+                                <span>Mufti Zubair</span>
+                            </td>
                             <td><span class="t-orange tc"></span><span>On hold</span></td>
                             <td>$100</td>
                             <td>23 July 2021</td>
@@ -81,6 +111,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-4.png" alt="">
+                                <span>James Nuclear</span>
+                            </td>
                             <td><span class="t-green tc"></span><span>Completed</span></td>
                             <td>$100</td>
                             <td>23 July 2021</td>
@@ -90,6 +124,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-5.png" alt="">
+                                <span>Atomic Bomb</span>
+                            </td>
                             <td><span class="t-red tc"></span><span>Cancelled</span></td>
                             <td>$30</td>
                             <td>23 July 2021</td>
@@ -99,6 +137,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-6.png" alt="">
+                                <span>Missile Bolu</span>
+                            </td>
                             <td><span class="t-green tc"></span><span>Completed</span></td>
                             <td>$100</td>
                             <td>23 July 2021</td>
@@ -108,6 +150,10 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <img src="img/Oval-4.png" alt="">
+                                <span>Malcolm Quaday</span>
+                            </td>
                             <td><span class="t-orange tc"></span><span>On hold</span></td>
                             <td>$100</td>
                             <td>23 July 2021</td>
@@ -119,54 +165,27 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </div>
-
-    <!-- payment modal -->
-    <div class="p-overlay"></div>
-    <div class="p-modal">
-        <div class="d-flex justify-content-between pm-head align-items-center">
-            <p class="m-0 text-brand2">Payment type:</p>
-            <button class="pm-btn bk-tf active">Bank Transfer</button>
-            <button class="pm-btn cp-tf">Crypto Transfer</button>
-        </div>
-        <hr class="pm-line">
-        <div class="pm-body">
-            <form>
-                <div class="bank">
-                    <label>Withdrawal Amount:</label>
-                    <input type="text" placeholder="Amount">
-                    <label>Bank details:</label>
-                    <input type="text" placeholder="Account number">
-                    <input type="text" placeholder="Account name">
-                    <div class="f-split">
-                        <input type="text" placeholder="Bank">
-                        <input type="text" placeholder="Sort code">
+            <div class="payment-details">
+                <h3>Payment Details</h3>
+                <div class="row align-items-center">
+                    <img src="img/Ellipse 6.png" alt="">
+                    <div>
+                        <h3 class="pd-name">Lindsey Richard</h3>
+                        <p class="pd-email">lindseyrich@gmail.com</p>
+                        <p class="pd-phone">+234 1223 3528</p>
                     </div>
-                    <p>Note : It takes 24 -48hrs to process a referral payments. <br>
-                        You will receive a notification once your bonus is processed.
-                    </p>
+                    <div>
+                        <h3 class="pd-course">Introduction to cryptocurrencies</h3>
+                        <p class="pd-status"><span class="t-orange"></span>On hold</p>
+                        <h3 class="pd-date">April 24th, 2021.</h3>
+                    </div>
                 </div>
-                <div class="crypto d-none">
-                    <label>Amount($):</label>
-                    <input type="text" placeholder="Wallet address">
-                    <label>Choose currency type:</label>
-                    <select name="crypto_coin">
-                        <option value="BNB">BNB</option>
-                        <option value="BTC">BTC</option>
-                        <option value="BUSD">BUSD</option>
-                        <option value="USDT">USDT</option>
-                    </select>
-                    <label>Wallet address:</label>
-                    <input type="text" placeholder="Wallet address">
-                </div>
-                <div class="d-flex justify-content-end">
-                    <input type="submit" value="Send">
-                </div>
-            </form>
+            </div>
+        
         </div>
     </div>
 
+    
 
     <script src="js/navbar.js"></script>
 </body>
